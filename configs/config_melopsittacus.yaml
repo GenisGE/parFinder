@@ -1,0 +1,25 @@
+
+
+satc: "/maps/projects/cmec/people/lpq293/github/SATC/satc.R"
+parfinder: "scripts/parFinder.R"
+
+outmain: "results/Melopsittacus_undulatus"
+prename: "melopsittacus"
+
+samples:
+  "ANSW_10": "/home/lpq293/cmecdata/SATC/Melopsittacus_undulatus/BAM/ANSW_10.qc.bam"
+  "ANSW_16": "/home/lpq293/cmecdata/SATC/Melopsittacus_undulatus/BAM/ANSW_16.qc.bam"
+  "ANSW_24": "/home/lpq293/cmecdata/SATC/Melopsittacus_undulatus/BAM/ANSW_24.qc.bam"
+  "ANSW_50": "/home/lpq293/cmecdata/SATC/Melopsittacus_undulatus/BAM/ANSW_50.qc.bam"
+  "ANSW_61": "/home/lpq293/cmecdata/SATC/Melopsittacus_undulatus/BAM/ANSW_61.qc.bam"
+  "ANSW_64": "/home/lpq293/cmecdata/SATC/Melopsittacus_undulatus/BAM/ANSW_64.qc.bam"
+  "Melopsittacus_undulatus": "/home/lpq293/cmecdata/SATC/Melopsittacus_undulatus/BAM/Melopsittacus_undulatus.bam"
+
+
+
+winsizes:
+ - 50000
+ - 100000
+ - 1000000
+
+minlen: 1000000
