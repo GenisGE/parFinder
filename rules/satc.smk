@@ -28,7 +28,7 @@ rule run_satc:
         mem_mb = 10000,
         runtime = 300
     shell: """
-        "{conda_env}/bin/Rscript" {SATC} -i {input.idx_list} -o {params.outprefix} --minLength {params.minlen}
+        $CONDA_PREFIX/bin/Rscript {SATC} -i {input.idx_list} -o {params.outprefix} --minLength {params.minlen}
     """
 
 
@@ -49,5 +49,5 @@ rule run_satc_findPar:
         runtime = 300
     shell: """
         mkdir -p {output.pngfolder}
-        "{conda_env}/bin/Rscript" {PARFINDER} {input.depmat} {input.samplesex} {params.outprefix}
+        $CONDA_PREFIX/bin/Rscript {PARFINDER} {input.depmat} {input.samplesex} {params.outprefix}
     """
