@@ -1,6 +1,6 @@
 
 
-satc: "/maps/projects/cmec/people/lpq293/github/SATC/satc.R"
+satc: "SATC/satc.R"
 parfinder: "scripts/parFinder.R"
 
 outmain: "results/Melopsittacus_undulatus"
