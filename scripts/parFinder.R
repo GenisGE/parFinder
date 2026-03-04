@@ -53,7 +53,7 @@ outDF$diffDepthHomMinusHet <- outDF$meanDepHomomorphic - outDF$meanDepHeteromorp
 # NEEDS IMPROVING
 # make thresholds as parameter or use t-test
 outDF$winCategory <- "weird"
-outDF$winCategory[outDF$diff < 0.15 & outDF$diff > -0.15] <- "autosomal" # needs extra condition, that both sexes are ~1
+outDF$winCategory[abs(diff) < 0.15 & outDF$meanDepHomomorphic > 0.8 & outDF$meanDepHeteromorphic > 0.8 & outDF$meanDepHomomorphic < 1.2 & outDF$meanDepHeteromorphic < 1.2 ] <- "autosomal" # needs extra condition, that both sexes are ~1
 outDF$winCategory[outDF$diff < 0.65 & outDF$diff > 0.35] <- "sex-linked" # needs extra condition, heterogametic ~0.5 and homogametic ~1
 
 # write output table with
